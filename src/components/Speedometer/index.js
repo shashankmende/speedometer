@@ -4,8 +4,22 @@ import './index.css'
 class Speedometer extends Component {
   state = {speed: 0}
 
-  render() {
+  onIncrement = () => {
     const {speed} = this.state
+    if (speed < 200) {
+      this.setState(prevState => ({speed: prevState.speed + 10}))
+    }
+  }
+
+  onDecrement = () => {
+    const {speed} = this.state
+    if (speed > 0) {
+      this.setState(prevState => ({speed: prevState.speed - 10}))
+    }
+  }
+
+  render() {
+    const {speed} = this.speed
     return (
       <div className="bg_container">
         <h1 className="heading">SPEEDOMETER</h1>
