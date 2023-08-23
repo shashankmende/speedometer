@@ -1,0 +1,43 @@
+/* Write your CSS here */
+.image {
+  width: 100%;
+  background-size: cover;
+}
+
+.bg_container {
+  background-color: #07080c;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading {
+  color: #ffffff;
+}
+.Accelerate {
+  background-color: #0b69ff;
+  padding: 10px;
+  color: white;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+.Break {
+  background-color: black;
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  color: white;
+  margin-left: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+}
+.buttons-container {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
